@@ -1,7 +1,7 @@
 spark.executor.memory=<%= ENV["SPARK_EXECUTOR_MEMORY"] || '12g' %>
 spark.driver.memory=<%= ENV["SPARK_DRIVER_MEMORY"] || '2g' %>
-spark.executor.extraClassPath=/app/spark-home/lib/hadoop-aws-shaded.jar:/app/spark-home/lib/hadoop-lzo.jar
-spark.driver.extraClassPath=/app/spark-home/lib/hadoop-aws-shaded.jar:/app/spark-home/lib/hadoop-lzo.jar
+spark.executor.extraClassPath=/app/spark-home/lib/hadoop-aws-shaded.jar:/app/spark-home/lib/hadoop-lzo.jar:/app/spark-home/lib/httpcomponents-client-4.5.2/lib/httpclient-4.5.2.jar:/app/spark-home/lib/httpcomponents-client-4.5.2/lib/httpcore-4.4.4.jar:/app/spark-home/lib/httpcomponents-client-4.5.2/lib/commons-codec-1.9.jar:/app/spark-home/lib/httpcomponents-client-4.5.2/lib/commons-logging-1.2.jar
+spark.driver.extraClassPath=/app/spark-home/lib/hadoop-aws-shaded.jar:/app/spark-home/lib/hadoop-lzo.jar:/app/spark-home/lib/httpcomponents-client-4.5.2/lib/httpclient-4.5.2.jar:/app/spark-home/lib/httpcomponents-client-4.5.2/lib/httpcore-4.4.4.jar:/app/spark-home/lib/httpcomponents-client-4.5.2/lib/commons-codec-1.9.jar:/app/spark-home/lib/httpcomponents-client-4.5.2/lib/commons-logging-1.2.jar
 spark.hadoop.fs.s3a.impl=org.apache.hadoop.fs.s3a.S3AFileSystem
 spark.hadoop.fs.AbstractFileSystem.s3a.impl=org.apache.hadoop.fs.s3a.S3A
 spark.hadoop.fs.s3n.impl=org.apache.hadoop.fs.s3native.NativeS3FileSystem
