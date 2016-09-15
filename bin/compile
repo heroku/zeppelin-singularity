@@ -45,4 +45,4 @@ finish Configuring NGINX
 
 notice Adding updated HTTP Client for Spark workers
 curl -s https://marsikai.s3.amazonaws.com/httpcomponents-client-4.5.2-bin.tar.gz | tar xz
-mv httpcomponents-client-4.5.2-bin spark-home/lib/
+mv httpcomponents-client-4.5.2 spark-home/lib/
